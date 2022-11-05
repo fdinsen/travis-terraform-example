@@ -22,10 +22,6 @@ output "droplet_limit" {
     value = data.digitalocean_account.account_info.droplet_limit
 }
 
-credentials "app.terraform.io" {
-  token = app.terraform.io
-}
-
 terraform {
   cloud {
     organization = "fdinsen"
